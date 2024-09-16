@@ -1,10 +1,10 @@
-# dbt_air_bnb
+# dbt_airbnb
 
-Welcome to the **dbt_air_bnb** project! This dataset is used as a part of the preparation of DBT Analytics Engineering Certification. This repository contains a collection of dbt (data build tool) models and configurations for analyzing and transforming Airbnb data.
+Welcome to the **dbt_airbnb** project! This dataset is used as a part of the preparation of DBT Analytics Engineering Certification. This repository contains a collection of dbt (data build tool) models and configurations for analyzing and transforming Airbnb data.
 
 ## Table of Contents
 
-- [dbt\_air\_bnb](#dbt_air_bnb)
+- [dbt\_airbnb](#dbt_airbnb)
   - [Table of Contents](#table-of-contents)
   - [Project Overview](#project-overview)
   - [Features](#features)
