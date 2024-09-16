@@ -1,0 +1,13 @@
+dbt_airbnb:
+  outputs:
+    dev:
+      account: <snowflake account>
+      database: <database bane>
+      password: <database password>
+      role: <role name>
+      schema: <target schema name>
+      threads: 1
+      type: snowflake
+      user: dbt
+      warehouse: <warehouse name>
+  target: <target schema name>
