@@ -1,0 +1,35 @@
+name: 'dbt_airbnb'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dbt_airbnb'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+asset-paths: ["assets"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  dbt_airbnb:
+    +materialized: view
+    +post-hook:
+      - "grant select on {{ this }} to role reporter"
+    dim:
+      +materialized: table
+    src:
+      +materialized: ephemeral
+
+vars:
+  user_name: DEFAULT_USERNAME_FOR_THIS_PROJECT
+
+
+
+
